@@ -6,7 +6,7 @@
       {
         "id": "a485c7d9eca64cde",
         "type": "tabs",
-        "dimension": 82.2380106571936,
+        "dimension": 82.23801065719361,
         "children": [
           {
             "id": "4d047f7f94204dec",
@@ -14,12 +14,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Normalization.md",
+                "file": "Autograd.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Normalization"
+              "title": "Autograd"
             }
           }
         ]
@@ -27,7 +27,7 @@
       {
         "id": "5c01ac04012f2a11",
         "type": "tabs",
-        "dimension": 17.761989342806395,
+        "dimension": 17.761989342806398,
         "children": [
           {
             "id": "523ac7e0204d68dd",
@@ -96,7 +96,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "f7f5d34682b548d1",
@@ -198,12 +199,15 @@
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
-      "bases:Create new base": false
+      "bases:Create new base": false,
+      "obsidian-git:Open Git source control": false
     }
   },
   "active": "4d047f7f94204dec",
   "lastOpenFiles": [
-    "Transformer.md",
-    "Normalization.md"
+    "Autograd.md",
+    "Untitled.base",
+    "Normalization.md",
+    "Transformer.md"
   ]
 }
