@@ -10,7 +10,7 @@ v_t &= \beta_2 v_{t-1} + (1 - \beta_2) g_t^2 \\
 	3. Why need bias correction?
 		1. Because the initial m and v will be highly rely on g since m0=0 & v0=0.  
 		2. At the beginning, the effective step is $$\frac{(1-\beta_1)g}{\sqrt{(1-\beta_2)g^2}} = \frac{(1-\beta_1)sign(g)}{\sqrt{(1-\beta_2)}}$$
-		3. Outcome 1: step is too large: with default parma $$\beta_1 = 0.9, \beta_2 = 0.99$$, the value would be 3.16*sign(g) --> much larger than expected learning_rate
+		3. Outcome 1: step is too large: with default parma $$\beta_1 = 0.9, \beta_2 = 0.999$$, the value would be 3.16*sign(g) --> much larger than expected learning_rate
 		4. Outcome 2: step is too small: 
 			1. mt corrects the bounce between negative and positive(it's signed)
 			2. vt is unsigned, so if g is large for one time, it will remain large for a long time. 

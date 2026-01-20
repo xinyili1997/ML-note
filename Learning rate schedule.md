@@ -15,7 +15,7 @@
 	2. $$\eta_t = \eta_{min} + \frac{1}{2}(\eta_{max} - \eta_{min})\left(1 + \cos\left(\frac{t}{T}\pi\right)\right)$$
 	3. Later in training, you don’t want the learning rate to stay large because it can:
 		1. keep overshooting the optimum
-		2. cause oscillations around a good solution
+		2. cause oscillations(aa·suh·lay·shnz) around a good solution
 		3. hurt final performance/generalization
 	3. Cosine decay gradually decreases the learning rate, helping the model make smaller, fine-grained updates and converge better.
 3. 
