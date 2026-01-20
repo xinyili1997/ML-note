@@ -19,6 +19,7 @@
 	4. 
 2. $$sqrt(d_k)$$ is logits scaling/normalization
 	1. Solved: softmax saturation, overflow, gradient is too small
+	
 3. **LayerNorm**
 	1. Normalized the token, and make it back to normal distritbution
 	2. Solved: The std and mean of each hidden layer, avoiding activation drift.
@@ -41,6 +42,7 @@
 		 4. Chatgpt uses pre-Ln and apply a final LN:
 			 1. Pre-Ln is more robust and easy to train. 
 			 2. Pre-Ln cannot ensure the final output is normalized. Final LN could do that which can help stabilize logits/softmax. 
+
 4. Residual Connection
 	1. $$ y = x + F(x) $$
 	2. Solved:
@@ -48,13 +50,14 @@
 		2. Easier to optimize:
 			1. Could start with y ~=x, which is identity,   making loss/gradient smoother and easier to use SGD/Adam.
 		3. Residual connections add a skip path that preserves the input and helps gradients propagate through many layers, reducing vanishing/exploding issues. This encourages layers to make small, incremental updates, which typically leads to faster convergence and more stable training.
+		
 5. Gradient clipping
 	1. Solved gradient clipping, usually needed as engineering practice
-	2. ```python
+	2.  ```python
 	loss.backward()
 	torch.nn.utils.clip_grad_norm_(model.parameters(), max_norm=1.0)
 	optimizer.step()
-	optimizer.zero_grad()
+	optimizer.zero_grad() # Clear all gradient as pytorch accumulate by default
 	   ```
     3. Used when:
 	    1. Potential loss spike/Nan/Inf 

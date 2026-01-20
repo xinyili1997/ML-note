@@ -6,7 +6,6 @@
       {
         "id": "a485c7d9eca64cde",
         "type": "tabs",
-        "dimension": 82.23801065719361,
         "children": [
           {
             "id": "4d047f7f94204dec",
@@ -14,32 +13,44 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Autograd.md",
+                "file": "Normalization.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Autograd"
+              "title": "Normalization"
             }
-          }
-        ]
-      },
-      {
-        "id": "5c01ac04012f2a11",
-        "type": "tabs",
-        "dimension": 17.761989342806398,
-        "children": [
+          },
           {
-            "id": "523ac7e0204d68dd",
+            "id": "af631d5f8a0b5f4e",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "Graph view"
+              "type": "markdown",
+              "state": {
+                "file": "Optimizer.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Optimizer"
+            }
+          },
+          {
+            "id": "52ad2ec1c4f0c098",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Learning rate schedule.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Learning rate schedule"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -203,11 +214,13 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "4d047f7f94204dec",
+  "active": "af631d5f8a0b5f4e",
   "lastOpenFiles": [
-    "Autograd.md",
-    "Untitled.base",
     "Normalization.md",
-    "Transformer.md"
+    "Optimizer.md",
+    "Learning rate schedule.md",
+    "Transformer.md",
+    "Untitled.base",
+    "Autograd.md"
   ]
 }
