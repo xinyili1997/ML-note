@@ -34,9 +34,23 @@
               "icon": "lucide-file",
               "title": "Chain of thought"
             }
+          },
+          {
+            "id": "b4459909dae44f8e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Loss.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Loss"
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -200,8 +214,9 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "202d9c684992b67d",
+  "active": "b4459909dae44f8e",
   "lastOpenFiles": [
+    "Loss.md",
     "Chain of thought.md",
     "To-do list.md",
     "Overview.md",

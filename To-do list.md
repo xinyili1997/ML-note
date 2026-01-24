@@ -14,6 +14,7 @@
 - [ ] Ensemble methods
 - [ ] Transfer learning
 - [ ] Fine-tuning strategies
+- [ ] Loss 
 
 **Key aspects to always cover:**
 
